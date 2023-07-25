@@ -4,25 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
     <script src="time.js"></script>
     <title>World O'Clock</title>
 </head>
-<body>
+<body class="background">
+    <div class="loader hide-loader" id="loader"></div>
     <header>
         <div class="headerTitle">
-            <h1>World O'clock</h1>
             <img src="img/logo.png" alt="logo World O'clock" class="headerLogo">
         </div>
     </header>
     <div class="input">
-        <input type="text" 
+        <p class="inputText">Indiquer votre pays pour connaitre la date et l'heure </p>
+        <input
+        autofocus
+        type="text" 
+        class="inputSelect"
         id="country" 
         name="country" 
         required placeholder="Votre Pays" 
         inputmode="lowercase" 
         onkeydown="if (event.keyCode == 13) time()"
         >
-        <button onclick="time()">Valider</button>
+        <button onclick="time()" class="buttonInput">Valider</button>
+        <div id="result">
+        </div>
     </div>
+    
 </body>
 </html>
