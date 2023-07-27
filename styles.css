@@ -1,23 +1,23 @@
 
-.input{
-    text-align: center;
-}
-
-.headerLogo{
-    
-     width: 10em;
-    background-color: #ffffff30;
-    border-radius: 10em;
-}
 .background{
-    background-size: auto;
+    /* background-size: auto;
     background-position: center;
     background-image: url(./img/the-new-york-public-library-yEauzeZU6xo-unsplash.jpg);
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;  */
     background-color:#0a0a0a;
     color: #ffff;
     font-family: 'Tektur', cursive;
 }
+.headerLogo{
+    
+    width: 10em;
+    background-color: #ffffff30;
+    border-radius: 10em;
+}
+.input{
+    text-align: center;
+}
+
 .inputSelect,
 .buttonInput
 {
@@ -32,18 +32,23 @@
     background-color: #0a0a0a70;
     border-radius: 5em;
 }
+.resultImg{
+    width: 25em;
+    border-radius: 10em;
+    margin: 5em;
+}
 
 .loader{
 	border-radius: 70px;
 	border: 3px solid #b0b145c7;
 	position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -50px;
-  margin-top: -50px;
-  display: block;
-width: 93px;
-height: 96px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    display: block;
+    width: 93px;
+    height: 96px;
 }
 
 .loader:after{

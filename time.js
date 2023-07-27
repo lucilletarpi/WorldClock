@@ -26,6 +26,7 @@ function time() {
 			} else return parseResponse(response);
 		})
 		.then((data) => {
+			console.log(data);
 			loader.classList.add("hide-loader");
 			if (country === data.requested_location) {
 				const localTime = new Date(data.datetime);
